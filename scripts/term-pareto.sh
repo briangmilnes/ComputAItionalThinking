@@ -10,8 +10,8 @@
 #   scripts/term-pareto.sh <class-dir> [<class-dir> ...]
 #     one dir   -> that class's Pareto
 #     many dirs -> a pooled corpus-wide Pareto over all of them
-#   e.g.  scripts/term-pareto.sh products/UWCSE/cse505
-#         scripts/term-pareto.sh products/*/*/            # every class, aggregate
+#   e.g.  scripts/term-pareto.sh corpuses/UWCSE/cse505
+#         scripts/term-pareto.sh corpuses/*/*/            # every class, aggregate
 #
 # Normalization (light): each headword drops a trailing "(...)" qualifier and
 # takes the first of "a / b" alternatives; an uppercase acronym inside the

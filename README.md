@@ -15,19 +15,19 @@ the glossaries give the agent the field's actual terms to reach for.
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `CLAUDE.md`                             | The agent ruleset: Personas, Language rules (no analogies/metaphors, report status as measurement, precise word sense), a Reference-vocabulary section, and numbered principles (Think Before Coding, Simplicity First, Surgical Changes, Compiler Warnings, Goal-Driven Execution). |
 | `ComputAItionalThinkingVocabulary.md`   | The merged, deduplicated master glossary — 2859 unique terms, built from the UW CSE and CMU SCS course vocabularies, with terms in both resolved to the clearer definition. Grep here first. |
-| `products/`                             | Per-source glossaries and the source material they were extracted from (see below).                                                  |
+| `corpuses/`                             | Per-source glossaries and the source material they were extracted from (see below).                                                  |
 | `docs/`                                 | Supplementary term references (see below).                                                                                            |
 | `analyses/`                             | Output of analysis scripts run over the corpus (currently a term-pareto corpus log).                                                  |
 | `scripts/`                              | Analysis scripts (currently `term-pareto.sh`).                                                                                        |
 
-### `products/`
+### `corpuses/`
 
 | Path                | What it is                                                                                                                            |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `products/UWCSE/`   | 15 University of Washington CSE courses (121, 122, 123, 311, 312, 331, 332, 333, 341, 344, 351, 401, 503, 505, 507). Per-course material plus a merged `vocabulary.md` of 1408 unique terms. |
-| `products/CMUSCS/`  | 17 Carnegie Mellon SCS courses (the 15-xxx PL / type-theory / logic / verification series and the 17-xxx SE / analysis courses). Per-course material plus a merged `vocabulary.md` of 1644 unique terms. |
-| `products/APAS/`    | *Algorithms: Parallel and Sequential* (Acar & Blelloch, CMU 15-210): algorithm, problem, ADT, and work/span cost-specification terminology — 719 terms — with the textbook PDF. |
-| `products/GTA/`     | *Graph Theory with Applications* (Bondy & Murty): graph-theory terminology, with the textbook PDF. The glossary for this source is being generated. |
+| `corpuses/UWCSE/`   | 15 University of Washington CSE courses (121, 122, 123, 311, 312, 331, 332, 333, 341, 344, 351, 401, 503, 505, 507). Per-course material plus a merged `vocabulary.md` of 1408 unique terms. |
+| `corpuses/CMUSCS/`  | 17 Carnegie Mellon SCS courses (the 15-xxx PL / type-theory / logic / verification series and the 17-xxx SE / analysis courses). Per-course material plus a merged `vocabulary.md` of 1644 unique terms. |
+| `corpuses/APAS/`    | *Algorithms: Parallel and Sequential* (Acar & Blelloch, CMU 15-210): algorithm, problem, ADT, and work/span cost-specification terminology — 719 terms — with the textbook PDF. |
+| `corpuses/GTA/`     | *Graph Theory with Applications* (Bondy & Murty): graph-theory terminology, with the textbook PDF. Its merged `vocabulary.md` has 295 terms. |
 
 Each course directory under `UWCSE/` and `CMUSCS/` holds the downloaded slides/notes
 and an extracted `vocabulary.md` (term → 1–2 sentence description). Each source
@@ -49,8 +49,8 @@ technical term and is unsure of its precise meaning or this project's preferred
 phrasing, it greps the glossaries on demand and uses the found definition and
 wording instead of improvising a paraphrase. Grep the master
 `ComputAItionalThinkingVocabulary.md` first; fall back to the per-source
-glossaries under `products/` and the supplementary references in `docs/` for
-narrower vocabularies (algorithm/cost terms in `products/APAS/`, Rust terms in
+glossaries under `corpuses/` and the supplementary references in `docs/` for
+narrower vocabularies (algorithm/cost terms in `corpuses/APAS/`, Rust terms in
 `docs/RustTermsCorrected.md`, and so on). The "Reference vocabulary" section of
 `CLAUDE.md` states this workflow.
 

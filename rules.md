@@ -73,8 +73,8 @@ definition and wording rather than improvising a paraphrase. Paths are absolute
 so this pointer works when the ruleset is imported into another project.
 
 - `~/projects/ComputAItionalThinking/ComputAItionalThinkingVocabulary.md` — the merged, deduplicated glossary (canonical; grep here first).
-- `~/projects/ComputAItionalThinking/products/APAS/vocabulary.md` — algorithms: work/span cost specifications, parallel and sequential algorithm specs, and ADT interfaces (from *Algorithms: Parallel and Sequential*). Grep here for algorithm and cost terminology.
-- `~/projects/ComputAItionalThinking/products/UWCSE/vocabulary.md`, `~/projects/ComputAItionalThinking/products/CMUSCS/vocabulary.md` — the university-course glossaries the canonical file is built from.
+- `~/projects/ComputAItionalThinking/corpuses/APAS/vocabulary.md` — algorithms: work/span cost specifications, parallel and sequential algorithm specs, and ADT interfaces (from *Algorithms: Parallel and Sequential*). Grep here for algorithm and cost terminology.
+- `~/projects/ComputAItionalThinking/corpuses/UWCSE/vocabulary.md`, `~/projects/ComputAItionalThinking/corpuses/CMUSCS/vocabulary.md` — the university-course glossaries the canonical file is built from.
 - `~/projects/ComputAItionalThinking/docs/*.md` — supplementary term references (programming-languages terms, Rust terms, SICP).
 
 ## 1. Think Before Coding
