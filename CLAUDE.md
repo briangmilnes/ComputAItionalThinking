@@ -74,7 +74,8 @@ project's preferred phrasing, `grep` the glossary for the term and use its
 definition and wording rather than improvising a paraphrase.
 
 - `ComputAItionalThinkingVocabulary.md` — the merged, deduplicated glossary (canonical; grep here first).
-- `products/*/vocabulary.md` — the per-source glossaries it is built from (UW CSE, CMU SCS, APAS).
+- `products/APAS/vocabulary.md` — algorithms: work/span cost specifications, parallel and sequential algorithm specs, and ADT interfaces (from *Algorithms: Parallel and Sequential*). Grep here for algorithm and cost terminology.
+- `products/UWCSE/vocabulary.md`, `products/CMUSCS/vocabulary.md` — the university-course glossaries the canonical file is built from.
 - `docs/*.md` — supplementary term references (programming-languages terms, Rust terms, SICP).
 
 ## 1. Think Before Coding
