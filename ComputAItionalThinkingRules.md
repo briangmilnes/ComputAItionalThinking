@@ -3,7 +3,7 @@
 A portable ruleset for Claude and other agents: think and speak in precise
 computer-science terms, and avoid analogies and metaphors. Adopt it in another
 project by adding this Claude Code import line to that project's `CLAUDE.md`:
-`@~/projects/ComputAItionalThinking/rules.md`.
+`@~/projects/ComputAItionalThinking/ComputAItionalThinkingRules.md`.
 
 ## Personas
 
@@ -64,6 +64,12 @@ and never "re-verified" when you mean "re-built and re-tested."
 concrete word over the abstract one, and be brief — every extra word is another
 the reader must check.
 
+**One term per concept.** Pick the single best technical term for a concept and
+use it consistently; do not alternate between synonyms for the same thing.
+Switching names for one thing — a "handle," then a "reference," then an "id" —
+forces the reader to work out whether you mean one thing or several. When the
+code or a cited source already fixes a term, use that one.
+
 ## Reference vocabulary
 
 This project maintains computer-science glossaries too large to hold in context.
@@ -73,9 +79,11 @@ definition and wording rather than improvising a paraphrase. Paths are absolute
 so this pointer works when the ruleset is imported into another project.
 
 - `~/projects/ComputAItionalThinking/ComputAItionalThinkingVocabulary.md` — the merged, deduplicated glossary (canonical; grep here first).
-- `~/projects/ComputAItionalThinking/corpuses/APAS/vocabulary.md` — algorithms: work/span cost specifications, parallel and sequential algorithm specs, and ADT interfaces (from *Algorithms: Parallel and Sequential*). Grep here for algorithm and cost terminology.
+- `~/projects/ComputAItionalThinking/corpuses/APAS/vocabulary.md` — algorithms: work/span cost specifications, parallel and sequential algorithm specs, and ADT interfaces (*Algorithms: Parallel and Sequential*). Grep here for algorithm and cost terminology.
+- `~/projects/ComputAItionalThinking/corpuses/GTA/vocabulary.md` — graph theory: connectivity, matchings, colourings, planarity, networks, and named theorems (*Graph Theory with Applications*, Bondy & Murty).
+- `~/projects/ComputAItionalThinking/corpuses/SICP/vocabulary.md` — programs, procedures, evaluation, and interpreters (*Structure and Interpretation of Computer Programs*).
 - `~/projects/ComputAItionalThinking/corpuses/UWCSE/vocabulary.md`, `~/projects/ComputAItionalThinking/corpuses/CMUSCS/vocabulary.md` — the university-course glossaries the canonical file is built from.
-- `~/projects/ComputAItionalThinking/docs/*.md` — supplementary term references (programming-languages terms, Rust terms, SICP).
+- `~/projects/APAS-VERUS/corpuses/RustTermsCorrected.md` — Rust ↔ programming-language terminology crosswalk (canonical copy in the APAS-VERUS project).
 
 ## 1. Think Before Coding
 
