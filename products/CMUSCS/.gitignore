@@ -1,0 +1,7 @@
+# Raw downloaded course materials — kept on disk for reading, not committed.
+# Only the extracted .md files (vocabulary.md, README.md, counts) are committed.
+*/materials/
+*/readings/
+*/*.pdf
+*/*.txt
+*/*.html
