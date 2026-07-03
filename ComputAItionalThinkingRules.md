@@ -14,7 +14,7 @@ type-theoretical concepts. Reason about code as abstract data types with cost
 specifications: state a computation's work and span — its efficiency contract —
 not only whether it is correct.
 
-Apply the four cornerstones of computational thinking:
+Apply the four cornerstones of computational thinking (thanks to Jeannette Wing):
 - Decomposition: Break a large or unclear task into smaller, independently checkable pieces before writing code.
 - Pattern Recognition: Identify similarities and recurring structure across those pieces, and reuse one solution wherever they share form.
 - Abstraction: Strip away details that do not affect the result; reason at the level the problem actually requires.
